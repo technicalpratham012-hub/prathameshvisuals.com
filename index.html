@@ -1324,3 +1324,663 @@
       .hamburger {
         display: flex;
       }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+      }
+
+      .footer-socials {
+        justify-content: center;
+      }
+
+      .footer-bottom-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Custom Cursor elements -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- Ambient Blobs -->
+  <div class="glow-blob blob-1"></div>
+  <div class="glow-blob blob-2"></div>
+
+  <!-- === HEADER / PILLED GLASS NAVBAR === -->
+  <header id="main-header">
+    <div class="nav-pill">
+      <a href="#home" class="logo">P.<span>Visuals</span></a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-btn-wrapper">
+        <a href="mailto:technicalpratham012@gmail.com" class="nav-btn">Hire Me</a>
+      </div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen Mobile Overlay Navigation -->
+  <div class="mobile-overlay" id="mobile-overlay">
+    <ul class="mobile-links">
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#portfolio" class="mobile-link">Portfolio</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+    <a href="mailto:technicalpratham012@gmail.com" class="btn btn-primary mobile-btn mobile-link">Hire Me</a>
+  </div>
+
+  <!-- === HERO SECTION === -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="badge fade-reveal">
+          <span class="pulse-dot"></span>
+          Available for work
+        </div>
+        <h1 class="fade-reveal">VISUAL<br><span class="accent-serif">CREATOR</span></h1>
+        <p class="hero-desc fade-reveal">I shape silence into visuals that speak with emotion, intention, and impact.</p>
+        
+        <!-- Social Profiles with Working Native Links -->
+        <div class="hero-socials fade-reveal">
+          <a href="https://www.instagram.com/prathamesh_visuals?igsh=MW94NWcxMWQxeHlmZQ==" class="social-btn" target="_blank" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/Pratham0338n" class="social-btn" target="_blank" title="Twitter/X" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/prathamesh-garode-678654286" class="social-btn" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/919423667799" class="social-btn" target="_blank" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+        <div class="hero-ctas fade-reveal">
+          <a href="#portfolio" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- Hero Visual Image with Vector Fallback -->
+      <div class="hero-visual fade-reveal">
+        <div class="image-fallback">
+          <div class="circle-orbit-1"></div>
+          <div class="circle-orbit-2"></div>
+          <div class="fallback-initials">PG</div>
+        </div>
+        <img class="hero-img" src="images/Prathamesh.png" alt="Prathamesh Garode" id="hero-img">
+      </div>
+    </div>
+
+    <div class="scroll-down fade-reveal">
+      <span class="mouse-icon">
+        <span class="scroll-wheel"></span>
+      </span>
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- === ABOUT PREVIEW SECTION === -->
+  <section class="about reveal" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-tag">About Me</span>
+          <h2>Shaping Silence Into <span class="accent-serif">Visual Stories</span></h2>
+          <p>Based in Armori, Maharashtra, I am dedicated to crafting premium visual identities, engaging videos, and high-impact designs that help creators and brands stand out. Guided by intention and attention to detail, my work marries aesthetics with strategy.</p>
+          <p>Whether it’s building stunning, responsive portfolios, creating clickable thumbnails, or managing visual directions, I elevate every digital touchpoint.</p>
+          <button class="btn btn-outline" id="about-expand-btn">Know More</button>
+        </div>
+
+        <!-- Animated Stats on Scroll Grid -->
+        <div class="about-stats" id="stats-section">
+          <div class="stat-card" data-target="30">
+            <div class="stat-number-wrapper"><span class="stat-number">0</span><span class="stat-plus">+</span></div>
+            <p class="stat-label">Projects</p>
+          </div>
+          <div class="stat-card" data-target="3">
+            <div class="stat-number-wrapper"><span class="stat-number">0</span><span class="stat-plus">+</span></div>
+            <p class="stat-label">Clients</p>
+          </div>
+          <div class="stat-card" data-target="2">
+            <div class="stat-number-wrapper"><span class="stat-number">0</span><span class="stat-plus">+</span></div>
+            <p class="stat-label">Brands</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SERVICES SECTION === -->
+  <section class="services reveal" id="services">
+    <div class="container">
+      <span class="section-tag">What I Do</span>
+      <h2 class="section-heading">Services Tailored For <span class="accent-serif">Impact</span></h2>
+      
+      <div class="services-grid">
+        <!-- 1. Graphic Design -->
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3 class="service-title">Graphic Design</h3>
+          <p class="service-desc">Tailored logos, conceptual posters, and custom brand identities forged with sophisticated art styling.</p>
+        </div>
+        <!-- 2. Video Editing -->
+        <div class="service-card">
+          <div class="service-icon">🎬</div>
+          <h3 class="service-title">Video Editing</h3>
+          <p class="service-desc">High-retention Reels, professional audio syncs, and cinematic motion designs made for maximum virality.</p>
+        </div>
+        <!-- 3. Thumbnail Design -->
+        <div class="service-card">
+          <div class="service-icon">🖼️</div>
+          <h3 class="service-title">Thumbnail Design</h3>
+          <p class="service-desc">High-CTR YouTube and social media thumbnails designed to demand direct visual attention and clicks.</p>
+        </div>
+        <!-- 4. Social Media Visuals -->
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3 class="service-title">Social Media Visuals</h3>
+          <p class="service-desc">Immersive carousel layouts, Instagram stories, banner kits, and unified brand aesthetics across feeds.</p>
+        </div>
+        <!-- 5. Website Building -->
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3 class="service-title">Website Building</h3>
+          <p class="service-desc">High-performance custom portfolios and sleek landing pages optimized for desktop &amp; mobile.</p>
+        </div>
+        <!-- 6. Meta Ads -->
+        <div class="service-card">
+          <div class="service-icon">🚀</div>
+          <h3 class="service-title">Meta Ads</h3>
+          <p class="service-desc">High-converting ad creatives and visual sequences strategic for social marketing campaign models.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SELECTED PORTFOLIO GRID === -->
+  <section class="portfolio reveal" id="portfolio">
+    <div class="container">
+      <span class="section-tag">My Work</span>
+      <h2 class="section-heading">Selected <span class="accent-serif">Creations</span></h2>
+      
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="video">Video</button>
+        <button class="filter-btn" data-filter="web">Web &amp; Marketing</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Portfolio 1 -->
+        <div class="portfolio-item" data-category="design">
+          <div class="portfolio-img-wrapper">
+            <div class="portfolio-fallback-bg" style="background: linear-gradient(135deg, #111 0%, #203A43 100%);">
+              <span>NEO BRAND IDENTITY</span>
+            </div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-category">Graphic Design</span>
+              <h3 class="portfolio-title">Ethereal Branding Concept</h3>
+              <p class="portfolio-desc">Complete luxury modern visual identities for high-tech content channels.</p>
+            </div>
+            <a href="https://wa.me/919423667799" class="portfolio-link" target="_blank" aria-label="Project Details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Portfolio 2 -->
+        <div class="portfolio-item" data-category="video">
+          <div class="portfolio-img-wrapper">
+            <div class="portfolio-fallback-bg" style="background: linear-gradient(135deg, #111 0%, #c9a84c20 100%);">
+              <span>CINEMATIC EDITS</span>
+            </div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-category">Video Editing</span>
+              <h3 class="portfolio-title">Hyper-Visual Reels</h3>
+              <p class="portfolio-desc">High-conversion fast sync video edits incorporating tailored soundscapes.</p>
+            </div>
+            <a href="https://wa.me/919423667799" class="portfolio-link" target="_blank" aria-label="Project Details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Portfolio 3 -->
+        <div class="portfolio-item" data-category="web">
+          <div class="portfolio-img-wrapper">
+            <div class="portfolio-fallback-bg" style="background: linear-gradient(135deg, #111 0%, #39ff1410 100%);">
+              <span>PORTFOLIO PLATFORMS</span>
+            </div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-category">Website Building</span>
+              <h3 class="portfolio-title">Artist Landing Page</h3>
+              <p class="portfolio-desc">Custom optimized responsive designs featuring elegant micro-interactions.</p>
+            </div>
+            <a href="https://wa.me/919423667799" class="portfolio-link" target="_blank" aria-label="Project Details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Portfolio 4 -->
+        <div class="portfolio-item" data-category="design">
+          <div class="portfolio-img-wrapper">
+            <div class="portfolio-fallback-bg" style="background: linear-gradient(135deg, #000 0%, #1c1c1c 100%);">
+              <span>HIGH CTR ART</span>
+            </div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-category">Thumbnail Design</span>
+              <h3 class="portfolio-title">Click-Driven Thumbnails</h3>
+              <p class="portfolio-desc">High fidelity lighting compositing for YouTube and digital influencers.</p>
+            </div>
+            <a href="https://wa.me/919423667799" class="portfolio-link" target="_blank" aria-label="Project Details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === CONTACT SECTION === -->
+  <section class="contact reveal" id="contact">
+    <div class="container">
+      <span class="section-tag">Get in touch</span>
+      <h2 class="section-heading">Let's Create Something <span class="accent-serif">Extraordinary</span></h2>
+      
+      <div class="contact-grid">
+        <div class="contact-info-panel">
+          <p class="contact-sub">Have a visionary brand idea or campaign that needs execution? Connect directly and let's craft beauty together.</p>
+          
+          <div class="info-items">
+            <!-- Email -->
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
+              <div class="info-detail">
+                <span>Email Me</span>
+                <a href="mailto:technicalpratham012@gmail.com">technicalpratham012@gmail.com</a>
+              </div>
+            </div>
+            <!-- Phone/Whatsapp -->
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="info-detail">
+                <span>Call / WhatsApp</span>
+                <a href="https://wa.me/919423667799">+91 9423667799</a>
+              </div>
+            </div>
+            <!-- Location -->
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-detail">
+                <span>Location</span>
+                <p>Vidya Nagar, Armori, Maharashtra - 441208</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form simulation with success visual alerts -->
+        <div class="contact-form-wrapper">
+          <form id="contact-form" class="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email Address</label>
+                <input type="email" id="form-email" required placeholder="john@example.com">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" id="form-subject" required placeholder="Project Inquiry">
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" rows="5" required placeholder="Write details about your vision..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+            <div class="form-feedback" id="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">P.<span>Visuals</span></span>
+        <p class="footer-tagline">I shape silence into visuals that speak with emotion, intention, and impact.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/prathamesh_visuals?igsh=MW94NWcxMWQxeHlmZQ==" class="social-btn" target="_blank" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/Pratham0338n" class="social-btn" target="_blank" title="Twitter" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/prathamesh-garode-678654286" class="social-btn" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/919423667799" class="social-btn" target="_blank" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p><i class="fa-regular fa-envelope" style="color: var(--accent-green);"></i> <a href="mailto:technicalpratham012@gmail.com">technicalpratham012@gmail.com</a></p>
+        <p><i class="fa-solid fa-phone" style="color: var(--accent-green);"></i> <a href="https://wa.me/919423667799">+91 9423667799</a></p>
+        <p><i class="fa-solid fa-location-dot" style="color: var(--accent-green);"></i> Vidya Nagar, Armori, Maharashtra - 441208</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Prathamesh Visuals. All rights reserved.</p>
+        <p>Built with passion &amp; code</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- === STYLISH EXTENDED ABOUT MODAL === -->
+  <div class="modal" id="about-modal">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="close-modal" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      <span class="section-tag">Deep Dive</span>
+      <h2 class="modal-title">Creative <span class="accent-serif">Philosophy</span></h2>
+      <div class="modal-grid">
+        <div class="modal-text">
+          <p>I am Prathamesh Garode, visual creator and design professional based in Armori, Maharashtra, India. With an intensive background in modern graphic layouts, video sequencing, and strategic visual positioning, I formulate digital architectures that communicate complex identities instantly.</p>
+          <h3>My Creative Strategy</h3>
+          <p>Every frame, pixel, and transition sequence is strategically configured. I do not design merely to occupy empty spaces; I design to direct focus, establishing clear hierarchies that lead to organic engagement.</p>
+          <h3>Aesthetics Meet Performance</h3>
+          <p>I focus on combining elegant high-end typography with rich layouts, producing lightweight assets that perform at rapid speeds without sacrificing cinematic aesthetic resolution.</p>
+        </div>
+        <div class="modal-timeline">
+          <h3 class="timeline-title">The Design Process</h3>
+          <div class="timeline-step">
+            <span class="step-num">01</span>
+            <div>
+              <h4>Deconstruction</h4>
+              <p>Analyzing and dissecting standard brand concepts to target core narrative elements.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <span class="step-num">02</span>
+            <div>
+              <h4>Prototyping</h4>
+              <p>Drafting geometric frames, layouts, and style structures for dynamic feedback.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <span class="step-num">03</span>
+            <div>
+              <h4>Production</h4>
+              <p>Polishing visuals, outputting high-fidelity media, or coding interactive responsive frontends.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- === JAVASCRIPT === -->
+  <script>
+    // 1. Loader Animation for Hero Elements
+    window.addEventListener('DOMContentLoaded', () => {
+      const heroElements = document.querySelectorAll('.hero .fade-reveal');
+      heroElements.forEach((el, idx) => {
+        setTimeout(() => {
+          el.classList.add('active');
+        }, idx * 150 + 200);
+      });
+    });
+
+    // 2. Fallback Graphic Check for Hero Profile Photo
+    const heroImg = document.getElementById('hero-img');
+    if (heroImg) {
+      heroImg.onerror = function() {
+        this.style.display = 'none'; // Shows elegant background SVG fallback behind seamlessly
+      }
+    }
+
+    // 3. Custom Smooth cursor coordinates with lerping/friction (Desktop Only)
+    let mouseX = 0, mouseY = 0;
+    let ringX = 0, ringY = 0;
+    const dot = document.getElementById('cursor-dot');
+    const ring = document.getElementById('cursor-ring');
+
+    if (dot && ring) {
+      document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        dot.style.top = `${mouseY}px`;
+        dot.style.left = `${mouseX}px`;
+      });
+
+      function animateCursor() {
+        ringX += (mouseX - ringX) * 0.15;
+        ringY += (mouseY - ringY) * 0.15;
+        ring.style.top = `${ringY}px`;
+        ring.style.left = `${ringX}px`;
+        requestAnimationFrame(animateCursor);
+      }
+      animateCursor();
+
+      // Scaler interactive effect on hovering clickable items
+      const targetItems = document.querySelectorAll('a, button, .service-card, .portfolio-item, .filter-btn');
+      targetItems.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          dot.style.width = '12px';
+          dot.style.height = '12px';
+          dot.style.backgroundColor = 'var(--accent-gold)';
+          ring.style.width = '50px';
+          ring.style.height = '50px';
+          ring.style.borderColor = 'var(--accent-gold)';
+        });
+        el.addEventListener('mouseleave', () => {
+          dot.style.width = '8px';
+          dot.style.height = '8px';
+          dot.style.backgroundColor = 'var(--accent-green)';
+          ring.style.width = '36px';
+          ring.style.height = '36px';
+          ring.style.borderColor = 'var(--accent-green)';
+        });
+      });
+    }
+
+    // 4. Header Dynamic Shrinking and Blurring on Scroll
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // 5. Mobile Overlay Menu Management
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileOverlay = document.getElementById('mobile-overlay');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMobileNav() {
+      hamburgerBtn.classList.toggle('active');
+      mobileOverlay.classList.toggle('active');
+      if (mobileOverlay.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    }
+
+    hamburgerBtn.addEventListener('click', toggleMobileNav);
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', toggleMobileNav);
+    });
+
+    // 6. Section Scroll Highlight on Menu Items
+    const sections = document.querySelectorAll('section');
+    const navAnchors = document.querySelectorAll('.nav-links a');
+
+    const activeScrollObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          navAnchors.forEach(anchor => {
+            if (anchor.getAttribute('href') === `#${id}`) {
+              anchor.classList.add('active');
+            } else {
+              anchor.classList.remove('active');
+            }
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+
+    sections.forEach(sec => activeScrollObserver.observe(sec));
+
+    // 7. General Section Fade/Slide In on Scroll
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // 8. Stats Number Increment Counter on Viewport Intersect
+    const statsSection = document.getElementById('stats-section');
+    const statCards = document.querySelectorAll('.stat-card');
+    let countersExecuted = false;
+
+    const statsObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !countersExecuted) {
+          statCards.forEach(card => {
+            const numEl = card.querySelector('.stat-number');
+            const limit = parseInt(card.getAttribute('data-target'), 10);
+            let score = 0;
+            const stepDuration = Math.max(Math.floor(1500 / limit), 30);
+
+            const timer = setInterval(() => {
+              score += 1;
+              numEl.textContent = score;
+              if (score >= limit) {
+                numEl.textContent = limit;
+                clearInterval(timer);
+              }
+            }, stepDuration);
+          });
+          countersExecuted = true;
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    if (statsSection) {
+      statsObserver.observe(statsSection);
+    }
+
+    // 9. Portfolio Filter Categorization System
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioProjects = document.querySelectorAll('.portfolio-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const activeFilter = btn.getAttribute('data-filter');
+
+        portfolioProjects.forEach(project => {
+          const projectCategory = project.getAttribute('data-category');
+          if (activeFilter === 'all' || projectCategory === activeFilter) {
+            project.style.display = 'block';
+            setTimeout(() => {
+              project.style.opacity = '1';
+              project.style.transform = 'scale(1)';
+            }, 50);
+          } else {
+            project.style.opacity = '0';
+            project.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+              project.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    // 10. Contact Form Interaction handling
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const feedback = document.getElementById('form-feedback');
+      feedback.style.display = 'block';
+      feedback.className = 'form-feedback success';
+      feedback.innerHTML = '<i class="fa-solid fa-circle-check"></i> Thanks Prathamesh! Your message was sent successfully. I will get back to you shortly.';
+      e.target.reset();
+
+      setTimeout(() => {
+        feedback.style.display = 'none';
+      }, 5000);
+    }
+
+    // 11. Modal Window Toggle (Know More)
+    const openModalBtn = document.getElementById('about-expand-btn');
+    const closeModalBtn = document.getElementById('close-modal');
+    const modalBackdrop = document.getElementById('modal-backdrop');
+    const modal = document.getElementById('about-modal');
+
+    function openModal() {
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    openModalBtn.addEventListener('click', openModal);
+    closeModalBtn.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', closeModal);
+
+    // Escape Key Modal Dismiss
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('active')) {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>
