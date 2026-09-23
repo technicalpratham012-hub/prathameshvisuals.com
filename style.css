@@ -1,0 +1,25 @@
+ body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10;
+    margin: 30px;
+    border: 2px solid #333;
+    border-radius: 80px;
+    background-color: rgb(90, 255, 2);
+
+}
+nav a {
+    color: rgb(2, 0, 0);
+    text-decoration: none;
+    margin: 0 20px;
+    
+}
+nav a:hover {
+    color: #9900ff;
+}
